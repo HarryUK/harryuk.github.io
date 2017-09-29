@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+body {
+    background: #AD2E24;
+    color: white;
+    font-family: 'Oswald', sans-serif; 
+}
+.jumbotron {
+    background: #2e2e2e;
+}
+.xyz {}
+.navbar-default {
+    background: #2e2e2e;
+    border:0px;
+}
+.container .jumbotron {
+    border-radius: 0px;
+}
+.xoq {
+    color: #3e3e3e !important;
+}
+@-webkit-keyframes byebutton {
+    100%{
+    padding-bottom: 30px;    
+    }
+}
+@keyframes byebutton {
+    100%{
+    padding-bottom: 50px;     
+    }
+}
+.byeebutton {
+     -webkit-animation: 1s byebutton ease;
+     animation: 1s byebutton ease;
+}
+.cnx {}
+.eskettit {
+     -webkit-animation: 1s zoomIn ease;
+     animation: 1s zoomIn ease;
+}
