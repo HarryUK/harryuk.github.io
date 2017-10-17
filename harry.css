@@ -7,9 +7,9 @@ body {
 .jumbotron .container .jumbotron {
     padding-bottom: 20px;
     padding-top: 20px;
-    -webkit-box-shadow: 0px 10px 65px -7px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 10px 65px -7px rgba(0,0,0,0.75);
-    box-shadow: 0px 10px 65px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 5px 66px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 66px -8px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 66px -8px rgba(0,0,0,0.75);
     margin-bottom: 50px;
 }
 .csslogo {
