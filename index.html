@@ -6,6 +6,12 @@
     <link rel="stylesheet" href="https://cdn.harry.ml/bootstrap/bootstrap3/css/bootstrap.min.css">
     <link rel="stylesheet" href="harry.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://cdn.harry.ml/jquery/3/jquery-3.2.1.min.js"></script>
+    <script>
+    if (navigator.userAgent.indexOf('Safari') != -1 && navigator.userAgent.indexOf('Chrome') == -1) {
+            $("#remove").removeClass("sr");
+    }
+    </script>
 </head>
 <body class="animated fadeIn">
     <header>
@@ -19,61 +25,61 @@
     </header>
 
     <div class="animated fadeInUp container" id="startt">
-        <div class="jumbotron">
+        <div class="jumbotron sr">
             <h1 class="text-center">Hello There</h1>
             <p>Welcome to my portfolio of projects<br>
             This is all my current projects up to date<br>
             Most've these projects ideas are from
             <a href="https://www.cambridge.org/gcse-computing/">Cambridge</a>.</p>
         </div>
-        <div class="jumbotron">
+        <div class="jumbotron sr">
             <h1 class="text-center">What I currently do ?</h1>
             <p>I'm currently studying to become a Web Designer.<br>
             But while I work towards that I make small but quite useful projects.
         </p>
         </div>
-        <div class="jumbotron">
+        <div class="jumbotron sr">
             <h1 class="text-center">Project list</h1>
-            <p>Here is a list of my currently completed projects:</p>
+            <p>Here is a list of my currenty completed projects:</p>
             <div class="container">
-                <div class="jumbotron">
+                <div class="jumbotron sr" id="remove">
                     <h2>Harry.ML</h2>
                     <p>The current site you're viewing</p>
                     <a href="https://github.com/HarryUK/harryuk.github.io" class="btn btn-default">Source Code</a>
                     <a href="https://harry.ml" class="btn btn-default">Preview</a>
                 </div>
-                <div class="jumbotron">
+                <div class="jumbotron sr" id="remove">
                     <h2>Zeus</h2>
                     <p>A Simple Username Generator</p>
                     <a href="https://github.com/HarryUK/Zeus/" class="btn btn-default">Source Code</a>
                     <a href="https://harry.ml/Zeus/" class="btn btn-default">Preview</a>
                 </div>
-                <div class="jumbotron">
+                <div class="jumbotron sr" id="remove">
                     <h2>GeoQuiz</h2>
                     <p>A Simple GeoQuiz</p>
                     <a href="https://github.com/HarryUK/geoquiz/" class="btn btn-default">Source Code</a>
                     <a href="https://harry.ml/geoquiz/" class="btn btn-default">Preview</a>
                 </div>
-                <div class="jumbotron">
+                <div class="jumbotron sr" id="remove">
                     <h2>CDN</h2>
                     <p>A Simple CDN</p>
                     <a href="https://github.com/HarryUK/cdn/" class="btn btn-default">Source Code</a>
                     <a href="https://cdn.harry.ml/" class="btn btn-default">Preview</a>
                 </div>
-                <div class="jumbotron">
+                <div class="jumbotron sr" id="remove">
                     <h2>IP</h2>
                     <p>Get's IP Information</p>
                     <a href="https://github.com/HarryUK/IP" class="btn btn-default">Source Code</a>
                     <a href="https://harry.ml/IP/" class="btn btn-default">Preview</a>
                 </div>
-                <div class="jumbotron">
+                <div class="jumbotron sr" id="remove">
                     <h2>Number Guessing Game</h2>
                     <p>Just a number guessing game.</p>
                     <a href="https://github.com/HarryUK/Guessing-Game/" class="btn btn-default">Source Code</a>
                     <a href="https://harry.ml/Guessing-Game/" class="btn btn-default">Preview</a>
                 </div>
             </div>
-                <div class="jumbotron text-center">
+                <div class="jumbotron sr text-center" id="remove">
                     <h2>View even more projects here:</h2>
                     <a href="https://github.com/HarryUK?tab=repositories" class="btn btn-default">My GitHub</a>
                 </div>
@@ -98,12 +104,12 @@
             <p class="text-center" style="padding-top:100px">I am currently working on a video to show what I can do as well</p>
         </div>
     </div>
-    <script src="https://cdn.harry.ml/jquery/3/jquery-3.2.1.min.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script>
     window.sr = ScrollReveal({reset: true});
-    sr.reveal('.jumbotron', { 
+    sr.reveal('.sr', { 
       viewFactor: 0,
+      mobile: true,
       rotate: { x: 50 , y: 0 , z: 0 },
       origin: 'bottom', 
       duration: 800
