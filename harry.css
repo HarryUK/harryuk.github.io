@@ -11,16 +11,16 @@ body {
     margin-bottom: 50px;
 }
 .btn-default {
-    background-color: #1a1a1a;
+    background-color: #791717;
     color:white;
     border: 0px;
     padding: 15px 25px;
+    transition: .5s ease;
 }
 .btn-default:focus,
 .btn-default:active,
 .btn-default:hover{
-    background-color:black !important;
-    color:white;
+    background-color:#611111 !important;
 }
 a {
     color:white;
@@ -30,14 +30,14 @@ a {
     font-size: 100px;
 }
 .jumbotron {
-    background: #3e3e3e;
+    background: firebrick;
 }
 .jumbotron h1 {
     padding-bottom: 50px;
 }
 .xyz {}
 .navbar-default {
-    background: #3e3e3e;
+    background: firebrick;
     padding-top: 10px;
     padding-bottom: 20px;
     border:0px;
@@ -48,25 +48,4 @@ a {
 .container .jumbotron {
     border-radius: 0px;
 }
-.xoq {
-    color: #e3e3e3 !important;
-}
-@-webkit-keyframes byebutton {
-    100%{
-    padding-bottom: 30px;    
-    }
-}
-@keyframes byebutton {
-    100%{
-    padding-bottom: 50px;     
-    }
-}
-.byeebutton {
-     -webkit-animation: 1s byebutton ease;
-     animation: 1s byebutton ease;
-}
-.cnx {}
-.eskettit {
-     -webkit-animation: 1s zoomIn ease;
-     animation: 1s zoomIn ease;
-}
+
