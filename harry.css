@@ -21,6 +21,7 @@ body {
 .btn-default:active,
 .btn-default:hover{
     background-color:#611111 !important;
+    color:white;
 }
 a {
     color:white;
