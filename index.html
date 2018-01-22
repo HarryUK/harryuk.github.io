@@ -94,14 +94,19 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/scrollreveal.min.js"></script>
     <script>
-    window.sr = ScrollReveal({reset: true});
-    sr.reveal('.xyz', { 
-        viewFactor: 0.1,
-        mobile: true,
-        rotate: { x: -20 , y: 0 , z: -1 },
-        origin: 'top', 
-        duration: 800
-    });
+    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    if(iOS = True) {
+        window.sr = ScrollReveal({reset: true});
+        sr.reveal('.xyz', { 
+            viewFactor: 0.1,
+            mobile: true,
+            rotate: { x: -20 , y: 0 , z: -1 },
+            origin: 'top', 
+            duration: 800
+        });
+    } else {
+        alert("You have iOS, don't you want to see the fancy scrolling?");
+    }
     function addmeondiscord() {
         $("#addmepic").slideToggle();
     }
