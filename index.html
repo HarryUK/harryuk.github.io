@@ -95,7 +95,7 @@
     <script src="js/scrollreveal.min.js"></script>
     <script>
     var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-    if(iOS = True) {
+    if(iOS = False) {
         window.sr = ScrollReveal({reset: true});
         sr.reveal('.xyz', { 
             viewFactor: 0.1,
@@ -104,7 +104,7 @@
             origin: 'top', 
             duration: 800
         });
-    } else if {
+    } else {
         alert("You have iOS, don't you want to see the fancy scrolling?");
     }
     function addmeondiscord() {
