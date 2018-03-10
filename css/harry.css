@@ -1,7 +1,7 @@
 body {
     background-color:#3e3e3e;
     margin-top: 100px;
-    overflow: scroll;
+    overflow-y: scroll;
     background: url('../img/bg.jpg') no-repeat center center;
     background-attachment: fixed;
     -webkit-background-size: cover;
