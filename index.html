@@ -86,20 +86,11 @@
                 <h1 style="padding-bottom: 25px">Contact me:</h1>
                 <p>Email:</p>
                 <a class="btn btn-default" href="mailto:itsharryfx@gmail.com">itsharryfx@gmail.com</a> 
-                <p style="margin-top:20px">Discord</p>
-                <a class="btn btn-default" onclick="addmeondiscord()">Harry#4986</a>
-                <div id="addmepic">
-                    <h2>How to add:</h2>
-                    <img style="margin-top: 20px" src="img/add.png" width="100%">
-                </div>
             </div>
         </div>
     <script src="js/jquery-3.2.1.min.js"></script>
     
     <script>
-    function addmeondiscord() {
-        $("#addmepic").slideToggle();
-    }
     $("#aboutlink").click(function() {
         $('html, body').animate({
             scrollTop: $("#aboutme").offset().top - $(".navbar").outerHeight(true) - 100
